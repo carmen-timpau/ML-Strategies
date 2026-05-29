@@ -1,6 +1,6 @@
 # ML-Strategies
 
-**Analysing the Impact of Data Splitting on ML Model Performance**
+**A. Analysing the Impact of Data Splitting on ML Model Performance**
 
 I. Splitting data into Train (70%)/ Validation (15%)/ Test (15%) sets
 
