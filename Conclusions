@@ -1,0 +1,6 @@
+After experimenting with different data splits and analysing the results, the conclusion is that, ideally, the model should be trained on 
+enough data which allows it to reliably learn its main (true) patterns, but not too much data that it starts to overfit. When the model’s 
+performance is being evaluated, the validation and test sets should contain enough data for the results to be meaningful and reliable.
+
+Thus, a 60:20:20 split ratio is more balanced than a 70:15:15 split ratio and strikes the best balance which avoids both underfitting and overfitting, 
+which makes it achieve great generalisation (i.e. the model achieves consistent accuracy when evaluating many different, unseen data sets).
