@@ -1,11 +1,11 @@
-#train/validate/test datasets split ratio = 60:20:20
+#train/validate/test dataset split ratio = 60:20:20
 
 from sklearn.datasets import load_wine
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report
 
-# Loading the default wine dataset
+# Loading a sample database (the default wine dataset)
 data = load_wine()
 X = data.data
 y = data.target
