@@ -1,0 +1,42 @@
+#Omitting the validation set and splitting the dataset into train/test with ratio 70:30
+
+from sklearn.datasets import load_wine
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, classification_report
+
+# Load the default wine dataset
+data = load_wine()
+X = data.data
+y = data.target
+
+# Split data into train (70%) and test (30%)sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 42, stratify = y)
+
+# Fit the logistic regression model
+model = LogisticRegression(max_iter = 10000, random_state = 42)
+model.fit(X_train, y_train)
+
+# Evaluate the test set
+test_preds = model.predict(X_test)
+test_accuracy = accuracy_score(y_test, test_preds)
+print(f"Test Accuracy: {test_accuracy:.4f}")
+
+# Detailed classification report on test set
+print("\nClassification Report on Test Set:")
+print(classification_report(y_test, test_preds, target_names=data.target_names))
+
+```OUTPUT:
+Test Accuracy: 0.9630
+
+Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+     class_0       1.00      1.00      1.00        18
+     class_1       0.91      1.00      0.95        21
+     class_2       1.00      0.87      0.93        15
+
+    accuracy                           0.96        54
+   macro avg       0.97      0.96      0.96        54
+weighted avg       0.97      0.96      0.96        54
+```
