@@ -26,7 +26,7 @@ print(f"Test Accuracy: {test_accuracy:.4f}")
 print("\nClassification Report on Test Set:")
 print(classification_report(y_test, test_preds, target_names=data.target_names))
 
-```OUTPUT:
+""" OUTPUT:
 Test Accuracy: 0.9583
 
 Classification Report on Test Set:
@@ -39,4 +39,4 @@ Classification Report on Test Set:
     accuracy                           0.96        72
    macro avg       0.96      0.95      0.96        72
 weighted avg       0.96      0.96      0.96        72
-```
+"""
