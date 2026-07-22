@@ -1,4 +1,4 @@
-#train/validate/test dataset split ratio = 60:20:20
+# train/validate/test dataset split ratio = 60:20:20
 
 from sklearn.datasets import load_wine
 from sklearn.model_selection import train_test_split
@@ -33,7 +33,7 @@ print(f"Test Accuracy: {test_accuracy:.4f}")
 print("\nClassification Report on Test Set:")
 print(classification_report(y_test, test_preds, target_names=data.target_names))
 
-```OUTPUT:
+""" OUTPUT:
 Validation Accuracy: 0.9444
 Test Accuracy: 0.9444
 
@@ -47,4 +47,4 @@ Classification Report on Test Set:
     accuracy                           0.94        36
    macro avg       0.96      0.93      0.94        36
 weighted avg       0.95      0.94      0.94        36
-```
+"""
