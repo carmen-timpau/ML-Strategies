@@ -1,4 +1,4 @@
-**ML-Strategies**
+**ML Strategies**
 
 **Analysing the Impact of Data Splitting on ML Model Performance**
   
