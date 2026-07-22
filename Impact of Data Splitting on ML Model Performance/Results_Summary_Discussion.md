@@ -1,4 +1,4 @@
-Results Summary:
+**Results Summary:**
 
 I. 70:15:15 train/validation/test:
 Validation Accuracy: 1.0000
@@ -18,7 +18,7 @@ IV. 60:40 train/test:
 Test Accuracy: 0.9583
 
 
-Comments:
+**Discussion:**
 
  - 60:20:20 split vs 70:15:15:
 
