@@ -20,7 +20,7 @@ Test Accuracy: 0.9583
 
 **Discussion:**
 
- - 60:20:20 split vs 70:15:15:
+ - _60:20:20 split vs 70:15:15:_
 
 Splitting the data into 60:20:20 train/validation/test sets yields the same accuracies (0.9444, high and satisfactory) when evaluating the 
 validation and test sets, which shows that the model has a great ability to consistently generalise well when working with previously unseen data, 
@@ -38,7 +38,7 @@ test set). This translates to poor generalisation, as the model accuracy is obvi
 want to avoid.
 
 
- - Omitting the validation set altogether:
+ - _Omitting the validation set altogether:_
 
 Furthermore, if we go on to omit the validation set altogether, the test accuracies we obtain (0.9583 for 60:40 train/test & 0.9630 for 70:30 train/test)
 are good, but because we don’t have a validation set, we cannot compare this value with any others, thus this is an unreliable result to base any important 
